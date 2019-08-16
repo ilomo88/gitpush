@@ -1,0 +1,12 @@
+       #git push
+
+git push this command sends branch commits to your remote repository.
+
+
+usage: $ git push -all[all variable name] -This commands pushes all the branches to your remote repository.
+
+usage:$ git push[variable name] :[branch name]- this commands delete the branches on your remote repository.
+
+demo:  $git push origin : datacleaning
+
+usage: $ git push[variable name] master-This commands sends submitted changes of master branch to remote repository
