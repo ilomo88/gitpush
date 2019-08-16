@@ -1,0 +1,23 @@
+#git add command
+The git add command adds a change in the working directory to the staging area.
+It tells Git that you want to include updates to a particular file in the next commit.
+This command can be performed multiple times before a commit. It only adds the content of the specified file(s) at the time the add command is run;
+if you want subsequent changes included in the next commit, then you must run git add again to add the new content to the index.
+
+The git add command will not add ignored files by default. If any ignored files were explicitly specified on the command line, git add will fail with a list of ignored files.
+Ignored files reached by directory recursion or filename globbing performed by Git (quote your globs before the shell) will be silently ignored.
+The git add command can be used to add ignored files with the -f (force) option.
+
+#How it works:
+1. Change directory to the folder containing the file you want to add.
+2. Then write:  "git add 'your file name'  this will add the file
+3. Then 'git commit -m "" '  to write comment on the file
+4. then 'git remote add origin "link of your repository" ' to add the file to the repository specified.
+
+
+#git add flags.
+1. 'git add -A' -	 stages all changes
+
+2. 'git add .' -	 stages new files and modifications, without deletions
+
+3. 'git add -u' -  	 stages modifications and deletions, without new files
